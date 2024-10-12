@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>my AutoPark</h1>
+
+<div>
+    <th:block th:each="car : ${cars}">
+        <h1 th:text="${car}"></h1>
+    </th:block>
+</div>
+<!-- <form action="сars" method="get">
+    <input type="text" name="count"
+    placeholder="Write count of car">
+    <input type="submit">
+</form> -->
+
+
+</body>
+</html>
