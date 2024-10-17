@@ -10,15 +10,12 @@ import java.util.List;
 
 @Controller
 public class HelloController {
-
     @GetMapping(value = "/")
     public String printWelcome(ModelMap model) {
         List<String> messages = new ArrayList<>();
-
         messages.add("Hello!");
-        messages.add("The weather today is good!");
+        messages.add("The weather today is not good!");
         model.addAttribute("messages", messages);
         return "index";
     }
-
 }

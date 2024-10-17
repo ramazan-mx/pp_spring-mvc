@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+<form method="post" th:action="@{/users/edit}">
+    <input type="hidden" name="id" th:value="${user.getId()}">
+    <label for="firstname">Name </label>
+    <input type="text" name="firstname" id="firstname">
+    <br>
+    <label for="lastname">Surname</label>
+    <input type="text" name="lastname" id="lastname">
+    <br>
+    <label for="email">Email </label>
+    <input type="text" name="email" id="email">
+    <br>
+    <input type="submit" value="Ok">
+</form>
+
+</body>
+</html>
