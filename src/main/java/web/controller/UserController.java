@@ -30,7 +30,7 @@ public class UserController {
     }
 
     @GetMapping("/new")
-    public String newUser(Model model) {
+    public String newUser() {
         return "user-new";
     }
 
